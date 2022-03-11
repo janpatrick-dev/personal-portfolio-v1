@@ -7,7 +7,7 @@ function Card(props) {
   return (
     <div class="card">
       <div class="card__top-content u-margin-bottom-medium">
-        {props.image ? <img src={props.image} alt="Project" class="card__image" /> : null }
+        {props.iconSrc ? <img src={props.iconSrc} alt="Project" class="card__image" /> : null }
         <h3 class="heading-tertiary">
           <span class="card__title">{props.title}</span> 
         </h3>
@@ -18,7 +18,7 @@ function Card(props) {
           {props.skills ? props.skills.map(skill => <CardSkill skill={skill} />) : null}
         </div>
         <div class="card__links">
-          {props.links ? props.links.map(link => <CardLink url={link.url} />) : null}
+          {props.links ? props.links.map(link => <CardLink url={link.url} iconType={link.iconType} />) : null}
         </div>
       </div>
     </div>
