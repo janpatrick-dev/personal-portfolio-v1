@@ -1,0 +1,43 @@
+:root {
+  --color-primary: #14213D;
+  --color-primary-num: 20, 33, 61;
+
+  --color-secondary: #FCA311;
+
+  --color-tertiary: #E5E5E5;
+
+  --color-light-grey-1: #f5f5f5;
+  // --color-primary-light: hsl(221, 51%, 16%);
+}
+
+::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  // padding: 25rem;
+  // margin: 20rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 100;
+  line-height: 1.7;
+}

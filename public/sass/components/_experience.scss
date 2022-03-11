@@ -1,0 +1,24 @@
+.experience__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience__role-details-box {
+  flex-shrink: 0;
+  flex-basis: 30%;
+}
+
+.experience__role-description-box {
+  flex-shrink: 0;
+  flex-basis: 70%;
+}
+
+.experience__description-item {
+  list-style: none;
+  
+  &::before {
+    content: ">";
+    margin-right: .5rem;
+  }
+}

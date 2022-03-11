@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  position: relative;
+
+  &__text-box {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__nav-box {
+    // max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+}
