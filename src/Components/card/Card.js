@@ -7,7 +7,7 @@ function Card(props) {
   return (
     <div class="card">
       <div class="card__top-content u-margin-bottom-medium">
-        {props.image ? <img src="../img/rabbit-arcade.jpg" alt="Project 1" class="card__image" /> : null }
+        {props.image ? <img src={props.image} alt="Project" class="card__image" /> : null }
         <h3 class="heading-tertiary">
           <span class="card__title">{props.title}</span> 
         </h3>
