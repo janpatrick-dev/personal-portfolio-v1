@@ -607,7 +607,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
 }
-@media (max-width: 1200px) {
+@media only screen and (max-width: 87.5em) {
   .projects {
     grid-template-columns: 1fr;
   }
