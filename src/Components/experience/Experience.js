@@ -4,8 +4,8 @@ import ExperienceItem from './ExperienceItem';
 function Experience() {
 
   return (
-    <section class="section-experience" id="experience">
-      <h2 class="heading-secondary u-margin-bottom-medium">Experience</h2>
+    <section className="section-experience" id="experience">
+      <h2 className="heading-secondary u-margin-bottom-medium">Experience</h2>
       <ExperienceItem 
         jobTitle="Software Engineer" 
         company="Mad Underground" 

@@ -4,9 +4,9 @@ import Card from '../card/Card';
 function Personal() {
 
   return (
-    <section class="section-personal" id="personal">
-      <h2 class="heading-secondary u-margin-bottom-medium">Personal&nbsp;Projects</h2>
-      <div class="personal">
+    <section className="section-personal" id="personal">
+      <h2 className="heading-secondary u-margin-bottom-medium">Personal&nbsp;Projects</h2>
+      <div className="personal">
         <Card title="Weather App" 
               description="A simple weather app using OpenWeather API. Built with React." 
               skills={['React', 'SCSS', '3rd Party API']}
@@ -23,7 +23,7 @@ function Personal() {
                 {url: 'https://github.com/janpatrick-dev/google-keep-clone', iconType: 'github'}
               ]} />
         <Card title="Personal Portfolio V1" 
-              description="My first personal online portfolio. Built with HTML &amp; SCSS." 
+              description="My first personal online portfolio. Built with React." 
               skills={['React', 'SCSS']}
               links={[
                 {url: '#', iconType: 'external'},

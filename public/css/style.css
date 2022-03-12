@@ -1,3 +1,19 @@
+/*
+  0 - 600px:        Phone
+  600px - 900px:    Tablet
+  900px - 1200px:   Tablet landscape
+  [1200px - 1800px] is where our normal styles applied
+  1800px+:          Big desktop
+*/
+/*
+  $breakpoint argument choices:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+
+  ORDER: Base + typography -> General layout + grid -> Page layout -> Components
+*/
 :root {
   --color-primary: #14213D;
   --color-primary-num: 20, 33, 61;
@@ -23,12 +39,27 @@
 }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media only screen and (max-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
+  box-sizing: border-box;
   background-color: var(--color-primary);
   color: var(--color-tertiary);
   font-family: "Barlow", sans-serif;
@@ -48,11 +79,22 @@ body {
   font-size: 7rem;
   letter-spacing: 1rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-weight: 300;
   font-size: 3rem;
   letter-spacing: 1rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 0.5rem;
+  }
 }
 
 .heading-secondary {
@@ -95,11 +137,19 @@ body {
   font-size: 1.7rem;
 }
 
-.nav-btn {
+.navigation__item {
   color: var(--color-light-grey-1);
   font-size: 1.4rem;
   font-weight: 300;
   text-decoration: none;
+}
+.navigation__item a:link, .navigation__item a:visited {
+  text-decoration: none;
+  color: var(--color-tertiary);
+}
+.navigation__item:hover a:link, .navigation__item:hover a:visited {
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 .experience__role-title,
@@ -223,6 +273,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media only screen and (max-width: 37.5em) {
+  .card {
+    padding: 3rem;
+  }
+}
 .card__title {
   color: var(--color-tertiary);
   text-align: center;
@@ -249,10 +304,22 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
 }
+@media only screen and (max-width: 37.5em) {
+  .card__top-content {
+    align-items: center;
+  }
+}
 .card__bottom-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .card__bottom-content {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    gap: 1rem;
+  }
 }
 .card__skill-item {
   display: inline-block;
@@ -288,7 +355,7 @@ body {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
-  cursor: context-menu;
+  cursor: pointer;
 }
 
 .experience__content {
@@ -296,10 +363,17 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 56.25em) {
+  .experience__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
 
 .experience__role-details {
   flex-shrink: 0;
-  flex-basis: 30%;
+  flex-basis: 20%;
 }
 
 .experience__role-description {
@@ -390,34 +464,18 @@ body {
   margin: 0 auto;
 }
 
-.nav-btn:link, .nav-btn:visited {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-secondary);
-  border-radius: 10px;
-  flex-basis: 100px;
-  padding: 0.5rem 1rem;
-  transition: all 0.2s;
+.about-me {
+  display: flex;
 }
-.nav-btn:not(:last-child) {
-  margin-right: 1rem;
+@media only screen and (max-width: 75em) {
+  .about-me {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.nav-btn:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
-  font-weight: 600;
-  transform: translateY(-5px);
-}
-
 .about-me__text {
   display: block;
-}
-.about-me__text--1 {
-  margin-bottom: 2rem;
-}
-.about-me__text--2 {
-  margin-bottom: 2rem;
-}
-.about-me__text--3 {
   margin-bottom: 2rem;
 }
 .about-me__skills .about-me__skill-item {
@@ -446,27 +504,21 @@ body {
   transform: scale(0.95);
   filter: grayscale(1);
 }
+@media only screen and (max-width: 75em) {
+  .about-me__photo {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .about-me__photo {
+    margin-top: 2rem;
+  }
+}
 .about-me__photo:hover {
   filter: grayscale(0);
   transform: scale(1);
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
-}
-
-.flex__basis-50 {
-  flex-basis: 50%;
-}
-
-.flex__grow {
-  flex-grow: 1;
-}
-
-.flex__no-grow {
-  flex-grow: 0;
-}
-
-.flex__about-me {
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer {
@@ -514,9 +566,30 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.header__nav {
+
+.navigation__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+.navigation__item {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+  flex-basis: 100px;
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__item {
+    padding: 1rem;
+  }
+}
+.navigation__item:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-5px);
 }
 
 .personal {
@@ -543,6 +616,16 @@ body {
 .main {
   padding: 0 25rem;
 }
+@media only screen and (max-width: 75em) {
+  .main {
+    padding: 0 10rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .main {
+    padding: 0;
+  }
+}
 
 .section-about,
 .section-experience,
@@ -551,6 +634,15 @@ body {
 .section-contact {
   max-width: 1000px;
   margin: 20rem auto;
+}
+@media only screen and (max-width: 37.5em) {
+  .section-about,
+.section-experience,
+.section-personal,
+.section-projects,
+.section-contact {
+    margin: 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

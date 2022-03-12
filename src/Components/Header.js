@@ -3,18 +3,22 @@ import React from 'react';
 function Header() {
 
   return (
-    <header class="header">
-      <div class="header__text">
-        <h1 class="heading-primary u-margin-bottom-medium">
-          <span class="heading-primary--main">Jan Patrick Palacio</span>
-          <span class="heading-primary--sub">Software Engineer</span>
+    <header className="header">
+      <div className="header__text">
+        <h1 className="heading-primary u-margin-bottom-medium">
+          <span className="heading-primary--main">Jan Patrick Palacio</span>
+          <span className="heading-primary--sub">Software Engineer</span>
         </h1>
-        <div class="header__nav">
-          <a href="#about" class="nav-btn">About</a>
-          <a href="#experience" class="nav-btn">Experience</a>
-          <a href="#personal" class="nav-btn">Projects</a>
-          <a href="#contact" class="nav-btn">Contact Me</a>
-          <a href="#" class="nav-btn">Resume</a>
+        <div className="navigation">
+          <nav className="navigation__nav">
+            <ul className="navigation__list">
+              <li className="navigation__item"><a href="#about">About</a></li>
+              <li className="navigation__item"><a href="#experience">Experience</a></li>
+              <li className="navigation__item"><a href="#personal">Projects</a></li>
+              <li className="navigation__item"><a href="#contact">Contact&nbsp;Me</a></li>
+              <li className="navigation__item"><a href="#">Resume</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>

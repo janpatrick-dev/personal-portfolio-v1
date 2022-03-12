@@ -9,6 +9,11 @@
     font-weight: 700;
     font-size: 7rem;
     letter-spacing: 1rem;
+
+    @include respond(phone) {
+      font-size: 4rem;
+      letter-spacing: .5rem;
+    }
   }
 
   &--sub {
@@ -16,6 +21,10 @@
     font-weight: 300;
     font-size: 3rem;
     letter-spacing: 1rem;
+
+    @include respond(phone) {
+      letter-spacing: .5rem;
+    }
   }
 }
 
@@ -66,12 +75,28 @@
   // font-weight: 300;
 }
 
-.nav-btn {
+.navigation__item {
   color: var(--color-light-grey-1);
   // font-family: ;
   font-size: 1.4rem;
   font-weight: 300;
   text-decoration: none;
+
+  & a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--color-tertiary);
+    }
+  }
+
+  &:hover a {
+    &:link,
+    &:visited {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+  }
 }
 
 .experience__role-title,

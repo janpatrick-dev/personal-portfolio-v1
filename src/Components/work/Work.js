@@ -4,9 +4,9 @@ import Card from '../card/Card';
 function Work() {
 
   return (
-    <section class="section-projects" id="projects">
-      <h2 class="heading-secondary u-margin-bottom-medium">Work&nbsp;Projects</h2>
-      <div class="projects">
+    <section className="section-projects" id="projects">
+      <h2 className="heading-secondary u-margin-bottom-medium">Work&nbsp;Projects</h2>
+      <div className="projects">
         <Card 
             iconSrc="../img/rabbit-arcade.jpg"
             title="Rabbit Arcade" 
