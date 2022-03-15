@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  position: relative;
+
+  &__text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

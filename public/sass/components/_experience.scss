@@ -1,0 +1,30 @@
+.experience__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+.experience__role-details {
+  flex-shrink: 0;
+  flex-basis: 20%;
+}
+
+.experience__role-description {
+  flex-shrink: 0;
+  flex-basis: 70%;
+}
+
+.experience__description-item {
+  list-style: none;
+  
+  &::before {
+    content: ">";
+    margin-right: .5rem;
+  }
+}

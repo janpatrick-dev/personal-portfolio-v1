@@ -1,0 +1,163 @@
+.heading-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--main {
+    display: block;
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 7rem;
+    letter-spacing: 1rem;
+
+    @include respond(phone) {
+      font-size: 4rem;
+      letter-spacing: .5rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+
+    @include respond(phone) {
+      letter-spacing: .5rem;
+    }
+  }
+}
+
+.heading-secondary {
+  display: block;
+  color: var(--color-secondary);
+  font-size: 3rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60%;
+    position: relative;
+    height: 1px;
+    margin-right: 20px;
+    background-color: var(--color-light-grey-1);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60%;
+    position: relative;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--color-light-grey-1);
+  }
+}
+
+.heading-tertiary {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph {
+  font-size: 2rem;
+}
+
+.about-me__skill-item {
+  // font-family: 'Oswald', sans-serif;
+  // font-family: 'Courier New', Courier, monospace;
+  font-size: 1.7rem;
+  // font-weight: 300;
+}
+
+.navigation__item {
+  color: var(--color-light-grey-1);
+  // font-family: ;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-decoration: none;
+
+  & a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--color-tertiary);
+    }
+  }
+
+  &:hover a {
+    &:link,
+    &:visited {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+  }
+}
+
+.experience__role-title,
+.card__title {
+  color: var(--color-secondary);
+  font-size: 2rem;
+}
+
+.experience__company {
+    font-size: 1.5rem;
+}
+
+.experience__duration {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.experience__content,
+.card__description {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.card__skill-item {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.projects__work-label {
+  display: block;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.contact__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  &--sub {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+.footer__copyright {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer__author {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}

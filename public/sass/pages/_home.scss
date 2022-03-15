@@ -1,0 +1,24 @@
+.main {
+  padding: 0 25rem;
+
+  @include respond(tab-land) {
+    padding: 0 10rem;
+  }
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+.section-about,
+.section-experience,
+.section-personal,
+.section-projects,
+.section-contact {
+  // padding: 0 20%;
+  max-width: 1000px;
+  margin: 20rem auto;
+
+  @include respond(phone) {
+    margin: 5rem;
+  }
+}
