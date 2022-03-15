@@ -14,7 +14,7 @@ function Header() {
             <ul className="navigation__list">
               <li className="navigation__item"><a href="#about">About</a></li>
               <li className="navigation__item"><a href="#experience">Experience</a></li>
-              <li className="navigation__item"><a href="#personal">Projects</a></li>
+              <li className="navigation__item"><a href="#projects">Projects</a></li>
               <li className="navigation__item"><a href="#contact">Contact&nbsp;Me</a></li>
               <li className="navigation__item"><a href="#">Resume</a></li>
             </ul>

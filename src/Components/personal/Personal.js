@@ -4,7 +4,7 @@ import Card from '../card/Card';
 function Personal() {
 
   return (
-    <section className="section-personal" id="personal">
+    <section className="section-personal" id="projects">
       <h2 className="heading-secondary u-margin-bottom-medium">Personal&nbsp;Projects</h2>
       <div className="personal">
         <Card title="Weather App" 

@@ -4,7 +4,7 @@ import Card from '../card/Card';
 function Work() {
 
   return (
-    <section className="section-projects" id="projects">
+    <section className="section-projects">
       <h2 className="heading-secondary u-margin-bottom-medium">Work&nbsp;Projects</h2>
       <div className="projects">
         <Card 
