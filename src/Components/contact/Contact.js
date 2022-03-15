@@ -1,6 +1,10 @@
 import React from 'react';
 
 function Contact() {
+
+  function sendEmail() {
+    window.location = "mailto:palaciojanpatrick@gmail.com";
+  }
   
   return (
     <section className="section-contact" id="contact">
@@ -12,7 +16,7 @@ function Contact() {
         </h2>
       </div>
       <div className="contact__form-group">
-        <button className="btn btn-submit contact__submit-btn" type="submit">Get In Touch</button>
+        <button className="btn btn-submit contact__submit-btn" type="submit" onClick={sendEmail}>Get In Touch</button>
       </div>
     </section>
   );

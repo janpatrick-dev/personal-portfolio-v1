@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../Jan Patrick Palacio - Curriculum Vitae.pdf'
 
 function Header() {
 
@@ -16,7 +17,7 @@ function Header() {
               <li className="navigation__item"><a href="#experience">Experience</a></li>
               <li className="navigation__item"><a href="#projects">Projects</a></li>
               <li className="navigation__item"><a href="#contact">Contact&nbsp;Me</a></li>
-              <li className="navigation__item"><a href="#">Resume</a></li>
+              <li className="navigation__item"><a href={Resume} target="_blank" rel='noopener noreferrer'>Resume</a></li>
             </ul>
           </nav>
         </div>
