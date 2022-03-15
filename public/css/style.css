@@ -507,6 +507,7 @@ body {
   .about-me__photo {
     width: 25rem;
     height: 25rem;
+    filter: none;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -518,6 +519,12 @@ body {
   filter: grayscale(0);
   transform: scale(1);
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: 75em) {
+  .about-me__photo:hover {
+    filter: none;
+    transform: scale(0.95);
+  }
 }
 
 .footer {

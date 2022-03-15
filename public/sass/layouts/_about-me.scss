@@ -48,6 +48,7 @@
     @include respond(tab-land) {
       width: 25rem;
       height: 25rem;
+      filter: none;
     }
 
     @include respond(tab-port) {
@@ -58,6 +59,11 @@
       filter: grayscale(0);
       transform: scale(1);
       box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+
+      @include respond(tab-land) {
+        filter: none;
+        transform: scale(0.95);
+      }
     }
   }
 }

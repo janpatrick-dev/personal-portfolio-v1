@@ -26,7 +26,7 @@ function Personal() {
               description="My first personal online portfolio. Built with React." 
               skills={['React', 'SCSS']}
               links={[
-                {url: '#', iconType: 'external'},
+                {url: 'https://www.janpatrickpalacio.com/', iconType: 'external'},
                 {url: 'https://github.com/janpatrick-dev/portfolio-v1', iconType: 'github'}
               ]} />
       </div>
