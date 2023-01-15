@@ -27,7 +27,7 @@ function Personal() {
               skills={['React', 'SCSS']}
               links={[
                 {url: 'https://www.janpatrickpalacio.com/', iconType: 'external'},
-                {url: 'https://github.com/janpatrick-dev/portfolio-v1', iconType: 'github'}
+                {url: 'https://github.com/janpatrick-dev/personal-portfolio-v1', iconType: 'github'}
               ]} />
       </div>
     </section>
