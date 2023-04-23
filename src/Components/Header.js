@@ -1,5 +1,5 @@
 import React from 'react';
-import Resume from '../Jan Patrick Palacio - Curriculum Vitae.pdf'
+import Resume from '../cv.pdf'
 
 function Header() {
 
