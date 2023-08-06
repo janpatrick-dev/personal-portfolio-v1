@@ -15,8 +15,8 @@ function Personal() {
           app. Built using MERN stack." 
           skills={['React', 'MongoDB', 'Express', 'Node.js', 'SCSS']}
           links={[
-            {url: 'https://the-book-keeper.netlify.app/', iconType: 'external'},
-            {url: 'https://github.com/janpatrick-dev/the-book-keeper/', iconType: 'github'}
+            {url: 'https://the-book-keeper.fly.dev/', iconType: 'external'},
+            {url: 'https://github.com/janpatrick-dev/the-book-keeper-v2', iconType: 'github'}
           ]} 
         />
         <Card 
